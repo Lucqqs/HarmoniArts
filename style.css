@@ -1,0 +1,632 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: white;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/*header*/
+header {
+  background: linear-gradient(135deg, #1a022b, #5c2fe4, #cc811f);/* Degradê suave em cores vibrantes */
+  height: 100vh;
+  position: relative;
+  background-size: 300% 300%;
+  animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+.hamburger{
+  opacity: 0;
+}
+
+nav {
+  position: fixed;
+  background: linear-gradient(to right, #0f0f1b, #1d0f2f);
+  opacity: 95%;
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 50px;
+  z-index: 2;
+}
+
+.logo {
+  position: absolute;
+  width: 90px;
+  left: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #eee3ee;
+  font-weight: bolder;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ad0797;
+}
+
+.hero-content{
+  position: absolute;
+  top: 30%;
+  left: 50px;
+  }
+
+.text-1 {
+  font-size: 45px;
+  font-style: italic;
+  background: linear-gradient(135deg, #a05c02, #daa000, #ffffff);/* Degradê suave em cores vibrantes */
+  -webkit-background-clip: text; /* Degradê no texto */      background-clip: text;
+  color: transparent; /* Texto transparente para aplicar o degradê */
+   letter-spacing: 2px;
+   text-transform: uppercase;
+}
+
+.text-2 {
+  font-size: 1.2rem;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.features{
+  display: flex;
+  margin: 50px 0 0 0;
+
+}
+
+.feature{
+  display: flex;
+  align-items: center;
+  flex: 1;
+  width: 10px;
+  padding: 20px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: italic;
+  background: linear-gradient(135deg, #000000, #000000, #110f0f21);
+  height: 60px;
+  border-radius: 20px;
+  margin: 0 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature img{
+  width: 30px;
+}
+
+.feature:hover{
+  transform: scale(1.2);  
+  cursor: default;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3)
+}
+
+.hero-content button {
+  margin-top: 30px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #ffbe0d, #dda407, #cc811f);  
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hero-content button:hover {
+
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(39, 9, 39, 0.6);
+}
+
+button:hover, button:focus {
+  transform: scale(1.05);
+}
+
+button img {
+  vertical-align: middle;
+  
+}
+
+
+.icon-bounce {
+  position: absolute;
+  animation: float 2s ease-in-out infinite;
+  display: inline-block;
+  margin: 50px;
+  width: 380px;
+  right: 0;
+  transition: transform 0.3s ease;
+}
+
+.icon-bounce:hover {
+    transform: scale(1.1);
+    
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* SOBRE */ 
+.sobre {
+  background-color: #0f0f1b;
+  color: white;
+  padding: 80px 0;
+  padding: 100px;
+  height: 100vh;
+}
+
+.container-sobre {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+  padding: 0 30px;
+}
+
+.texto-sobre {
+  flex: 1;
+  min-width: 300px;
+  padding-right: 40px;
+}
+
+.texto-sobre h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #c9a7ff;
+  font-style: italic;
+}
+
+.texto-sobre p {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.texto-sobre ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.texto-sobre ul li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.texto-sobre ul li img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.botao-sobre {
+  display: inline-block;
+  background: linear-gradient(to right, #e48f1e, #9f3cc1);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+
+.botao-sobre:hover {
+  transform: scale(1.05);
+}
+
+.imagem-sobre {
+  flex: 1;
+  text-align: center;
+}
+
+.imagem-sobre img {
+  max-width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  animation: float 2s ease-in-out infinite;
+}
+
+
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+/* BENEFÍCIOS */
+.beneficios-section {
+  background-color: #100c1b;
+  padding: 60px 30px;
+  color: #ffffff;
+  text-align: center;
+  height: 90vh;
+}
+
+.beneficios-section h2 {
+  font-size: 2.4rem;
+  color: #ff69e0;
+  margin-bottom: 40px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.beneficios-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.beneficio-card {
+  background: #1b1528;
+  border: 1px solid #312244;
+  border-radius: 20px;
+  padding: 25px;
+  width: 280px;
+  box-shadow: 0 0 12px #ff44aa55;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.beneficio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #ff44aa99;
+}
+
+.beneficio-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.beneficio-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #ffaaff;
+}
+
+.beneficio-card p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.depoimentos {
+  padding: 60px 10%;
+  background-color: #120f1a;
+  text-align: center;
+  width: 100%;
+  justify-content: row;
+  flex-wrap: wrap;
+  gap: ;
+}
+
+.depoimento-card {
+  background-color: #2a1b3d;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+
+}
+
+.depoimento-card img{
+  width: 50px;
+  height: 70px;
+  margin-top: 0px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Seção Cursos */
+.cursos {
+  background-color: #0c0c20;
+  padding: 60px 10%;
+  color: #fff;
+}
+
+.cursos h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #ff66c4;
+  text-shadow: 1px 1px 4px #000;
+}
+
+/* Container do carrossel */
+#carouselCursos {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+/* Slide interno */
+.carousel-inner {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(255, 102, 196, 0.3);
+}
+  
+
+/* Imagens do carrossel */
+.carousel-item img {
+  width: 100%;
+  height: 50px  0px;
+  border-radius: 8px;
+}
+
+.carousel-caption h5 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+.carousel-caption p {
+  font-size: 1rem;
+  color: #eee;
+}
+
+/* Botões */
+..carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none; /* Remove o ícone padrão */
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #ff66c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+}
+
+
+.card {
+    background-color: #312642;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    transition: transform 0.3s ease;
+  }
+
+.card:hover {
+    transform: scale(1.05);
+  }
+
+
+/* depoimentos*/
+.depoimentos {
+  padding-top: 100px;
+  background-color: #120f1a;
+  text-align: center;
+}
+
+.depoimento-card {
+  background-color: #2a1b3d;
+  border-radius: 10px;
+
+}
+.depoimentos h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #ff88dd;
+  text-shadow: 1px 1px 4px #000;
+}
+
+.depoimento-card {
+  background-color: #2a1b3d;
+  margin: 20px auto;
+  padding: 25px 30px;
+  border-radius: 16px;
+  max-width: 600px;
+  box-shadow: 0 0 12px rgba(255, 136, 221, 0.2);
+  font-style: italic;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  position: relative;
+}
+
+.depoimento-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 18px rgba(255, 136, 221, 0.3);
+}
+
+.depoimento-card img {
+  width: 60px;
+  height: 90px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+.depoimento-card p {
+  font-size: 1rem;
+  color: #f1f1f1;
+  line-height: 1.6;
+  margin: 0;
+  display: block;
+}
+
+.depoimento-card span {
+  display: block;
+  margin-top: 15px;
+  color: #ffccff;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* Contato */
+.contato {
+  padding: 60px 10%;
+  background-color: #181818;
+}
+
+.contato form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contato input,
+.contato textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  resize: none;
+}
+
+.contato button {
+  align-self: start;
+}
+
+.footer {
+  background-color: #0a0a0a;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.footer .redes img {
+  width: 30px;
+  margin: 0 10px;
+
+}
+
+.redes img:hover{
+  transform: scale(1.2);
+  transition: 0.5s;
+  
+}
+.footer .localizacao {
+  margin-top: 20px;
+}
+
+
+/* Estilos base já aplicados acima... */
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  nav ul {
+    gap: 15px;
+    display: flex;
+    width: 100%;
+    margin-left: 25px;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .logo {
+    margin-left: 1px;
+  }
+
+  .hero-content {
+    top: 30%;
+    left: 5%;
+    right: 5%;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .feature {
+    font-size: 12px;
+    padding: 10px;
+    margin: 0 5px;
+  }
+
+  .icon-bounce {
+    position: absolute;
+    top: 90px;
+    left: 230px;
+    max-width: 27%;
+  }
+
+  .sobre{
+    padding: 20px;
+    height: 90vh;
+  }
+
+  .container-sobre {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .botao-sobre {
+    margin-top: 20px;
+  }
+
+  .imagem-sobre {
+    margin-top: 20px;
+  }
+
+  .imagem-sobre {
+    padding: 0;
+    opacity: 0;
+  }
+
+ .beneficios-section{
+  height: 100vh;
+}
+
+  .depoimento-card {
+    padding: 20px;
+  }
+
+  #carouselCursos {
+    max-width: 90%;
+    opacity: 0;
+  }
+
+
+  .footer {
+    font-size: 0.9rem;
+    padding: 20px 10px;
+  }
+
+  .footer .redes img {
+    width: 25px;
+  }
+}
