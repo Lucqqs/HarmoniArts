@@ -539,54 +539,22 @@ button img {
 /* Estilos base já aplicados acima... */
 
 @media (max-width: 768px) {
-  .hamburger {
-  display: none;
-  font-size: 30px;
-  color: white;
-  cursor: pointer;
-  position: absolute;
-  right: 25px;
-  top: 25px;
-  z-index: 999;
-}
   nav {
-    flex-direction: row;
-    justify-content: space-between;
-    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
   }
-  
+
   nav ul {
-    display: none;
-  
-}
-
-/* Estilo para o botão hambúrguer no mobile */
-.navbar-toggler {
-  background-color: transparent;
-  border: none;
-  font-size: 1.5rem;
-  color: white;
-  margin-right: 1rem;
-}
-
-  nav ul li {
-    margin-bottom: 15px;
+    gap: 15px;
+    display: flex;
+    width: 100%;
+    margin-left: 25px;
   }
 
   nav ul.show {
-  display: flex;
-}
-
-  .hamburger {
-    display: block;
+    display: flex;
   }
-
-  .logo {
-    position: relative;
-    left: 15px;
-    top: 15px;
-  }
-}
 
   .logo {
     margin-left: 1px;
@@ -645,6 +613,10 @@ button img {
 
   .depoimento-card {
     padding: 20px;
+  }
+  
+  .depoimentos h2{
+    padding-top: 50px;
   }
 
   #carouselCursos {
