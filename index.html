@@ -4,37 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HarmoniArt's</title>
-  <link rel="stylesheet" href="/style.css">
-  <link rel="shortcut icon" href="/Img/favicon.png" type="image/x-icon">  
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="./Img/favicon.png" type="image/x-icon">  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 
 <body>
   <header>
   <nav>
-    <img class="logo" src="./Img/logoofc2.png" alt="Logo do Museu">
-    <ul>
-      <li><a href="#">Início</a></li>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#beneficios">Beneficios</a></li>
-      <li><a href="#depoimentos">Feedback</a></li>
-      <li><a href="../pages/game.html"></a></li>
-    </ul>
+    <img class="logo" src="./Img/logoofc2.png" alt="Logo do Instituto">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menuNav">
+  <ul class="navbar-nav ms-auto">
+    <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+    <li class="nav-item"><a class="nav-link" href="#beneficios">Benefícios</a></li>
+    <li class="nav-item"><a class="nav-link" href="#feedback">Feedback</a></li>
+  </ul>
+</div>
   </nav>
   <div class="hero-content">
     <h1 class="text-1">Instituto HarmoniArt's</h1>
     <p class="text-2">
      despertando talentos, conectando almas e moldando vidas com arte 
     </p>
-    <button onclick="window.location.href = '../pages/cursos.html';"><img src="../Img/guitar.png" alt="Ícone" width="25" height="25" left="">
+    <button onclick="window.location.href = './pages/cursos.html';"><img src="./Img/guitar.png" alt="Ícone" width="25" height="25" left="">
     Quero aprender música</button>
     <div class="features">
-      <div class="feature"><img src="../Img/microfone.png" alt="">Técnica vocal</div>
-      <div class="feature"><img src="../Img/guita.png" alt="">   Instrumentos modernos</div>
-      <div class="feature"><img src="../Img/fone.png" alt="">Produção musical</div>
+      <div class="feature"><img src="./Img/microfone.png" alt="">Técnica vocal</div>
+      <div class="feature"><img src="./Img/guita.png" alt="">   Instrumentos modernos</div>
+      <div class="feature"><img src=./Img/fone.png" alt="">Produção musical</div>
     </div>
   </div>
-  <img class="icon-bounce" src="../Img/icon2.png" >
+  <img class="icon-bounce" src="./Img/icon2.png" >
 </header>
 
   <main>
@@ -47,14 +52,14 @@
         O HarmoniArt's é mais do que um curso — é uma experiência transformadora. Nosso compromisso é levar a música além das partituras, despertando talentos, conectando pessoas e promovendo a arte em sua forma mais pura.
       </p>
       <ul>
-        <li><img src="../Img/violino.png" alt=""> Professores atuantes no mercado musical</li>
-        <li><img src="../Img/guitar4.png" alt=""> Aulas práticas, workshops e apresentações</li>
-        <li><img src="../Img/piano.png" alt=""> Criatividade, expressão e inovação artística</li>
+        <li><img src="./Img/violino.png" alt=""> Professores atuantes no mercado musical</li>
+        <li><img src="./Img/guitar4.png" alt=""> Aulas práticas, workshops e apresentações</li>
+        <li><img src="./Img/piano.png" alt=""> Criatividade, expressão e inovação artística</li>
       </ul>
-      <a href="/pages/cursos.html" class="botao-sobre">Conheça nossos cursos</a>
+      <a href="./pages/cursos.html" class="botao-sobre">Conheça nossos cursos</a>
     </div>
     <div class="imagem-sobre">
-      <img src="../Img/pessoas2.png" alt="Alunos tocando instrumentos">
+      <img src="./Img/pessoas2.png" alt="Alunos tocando instrumentos">
     </div>
   </div>
 </section>
@@ -64,17 +69,17 @@
   <h2>Por que estudar no HarmoniArt's?</h2>
   <div class="beneficios-container">
     <div class="beneficio-card">
-      <img src="../Img/11-removebg-preview.png" alt="Ícone de microfone">
+      <img src="./Img/11-removebg-preview.png" alt="Ícone de microfone">
       <h3>Aulas 100% práticas</h3>
       <p>Do estúdio para o palco. Aqui você aprende fazendo com vivência real.</p>
     </div>
     <div class="beneficio-card">
-      <img src="../Img/img3.png" alt="Ícone de livros">
+      <img src="./Img/img3.png" alt="Ícone de livros">
       <h3>Trilhas de aprendizado</h3>
       <p>Do iniciante ao avançado, com metas claras, desafios e apoio contínuo.</p>
     </div>
     <div class="beneficio-card">
-      <img src="../Img/fone2.png" alt="Ícone de fones de ouvido">
+      <img src="./Img/fone2.png" alt="Ícone de fones de ouvido">
       <h3>Estrutura Profissional</h3>
       <p>Estúdios, equipamentos e palco para performance artística de verdade.</p>
     </div>
@@ -86,19 +91,19 @@
     <div id="carouselCursos" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="../Img/canto.png" class="d-block w-100 rounded" alt="Curso de Canto">
+          <img src="./Img/canto.png" class="d-block w-100 rounded" alt="Curso de Canto">
           <div class="carousel-caption d-none d-md-block">
           </div>
         </div>
 
         <div class="carousel-item">
-          <img src="../Img/instrumentos.png" class="d-block w-100 rounded" alt="Instrumentos Musicais">
+          <img src="./Img/instrumentos.png" class="d-block w-100 rounded" alt="Instrumentos Musicais">
           <div class="carousel-caption d-none d-md-block">
           </div>
         </div>
 
         <div class="carousel-item">
-          <img src="../Img/produçao.png" class="d-block w-100 rounded" alt="Produção Musical">
+          <img src="./Img/produçao.png" class="d-block w-100 rounded" alt="Produção Musical">
           <div class="carousel-caption d-none d-md-block">
           </div>
         </div>
@@ -123,19 +128,19 @@
     <section class="depoimentos" id="depoimentos">
       <h2>Quem já passou por aqui?</h2>
       <div class="depoimento-card">
-        <p><img src="../Img/aluno1.png" alt="">“Aprender música mudou minha vida. O HarmoniArt's me deu palco, voz e confiança.”</p>
+        <p><img src="./Img/aluno1.png" alt="">“Aprender música mudou minha vida. O HarmoniArt's me deu palco, voz e confiança.”</p>
         <span>— Luana Souza</span>
       </div>
       <div class="depoimento-card">
-        <p><img src="../Img/aluno2.png" alt="">“Comecei no violão e hoje estou gravando minhas próprias músicas. Obrigado, HarmoniArt's!”</p>
+        <p><img src="./Img/aluno2.png" alt="">“Comecei no violão e hoje estou gravando minhas próprias músicas. Obrigado, HarmoniArt's!”</p>
         <span>— Jeferson Oliveira</span>
       </div>
       <div class="depoimento-card">
-        <p><img src="../Img/aluno3.png" alt="">“Além de aprender a tocar bateria, fiz ótimos amigos e conheci otimas pessoas!”</p>
+        <p><img src="./Img/aluno3.png" alt="">“Além de aprender a tocar bateria, fiz ótimos amigos e conheci otimas pessoas!”</p>
         <span>— Diego Nascimento</span>
       </div>
       <div class="depoimento-card">
-        <p><img src="../Img/aluno4.png" alt="">“Comecei no violão e hoje estou gravando minhas próprias músicas. Obrigado, HarmoniArt's!”</p>
+        <p><img src="./Img/aluno4.png" alt="">“Comecei no violão e hoje estou gravando minhas próprias músicas. Obrigado, HarmoniArt's!”</p>
         <span>— Carlos Eduardo</span>
       </div>
     </section>
@@ -146,9 +151,9 @@
   <footer class="footer">
     <div class="redes">
       <p>Siga o HarmoniArt's:</p>
-      <a href="https://www.instagram.com/harmoniart25/    "><img src="../Img/insta.png" alt="Instagram"></a>
-      <a href="https://web.whatsapp.com/"><img src="../Img/wpp.png" alt="WhatsApp"></a>
-      <a href="https://github.com/"><img src="../Img/git.png" alt="GitHub"></a>
+      <a href="https://www.instagram.com/harmoniart25/    "><img src="./Img/insta.png" alt="Instagram"></a>
+      <a href="https://web.whatsapp.com/"><img src="./Img/wpp.png" alt="WhatsApp"></a>
+      <a href="https://github.com/"><img src="./Img/git.png" alt="GitHub"></a>
     </div>
     <div class="localizacao">
       <p>📍 Rua da Música, 123 - Porto Alegre - RS</p>
@@ -156,6 +161,7 @@
     </div>
     <p class="copy">&copy; 2025 Instituto HarmoniArt's. Todos os direitos reservados.</p>
   </footer>
+<script src="./script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
